@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
 import matplotlib.pyplot as plt
-
+#Internet connection is required for yfinance package to get the data
 #Download historical stock data
 stock_symbol="AAPL"  #Can change this to any stock ticker you want
 data=yf.download(stock_symbol, start="2020-01-01", end="2025-01-01")
